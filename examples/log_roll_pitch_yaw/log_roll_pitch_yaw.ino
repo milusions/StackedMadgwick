@@ -63,6 +63,6 @@ void loop() {
     Serial.print(", ");
     Serial.println(heading);
 
-    mdwkTimer = millis();  // resets timer
+    mdwkLogTimer = millis();  // resets timer
   }
 }
