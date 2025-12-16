@@ -58,7 +58,7 @@ void loop() {
     float heading = stackedMadgwick.getYaw();
 
     // Prints roll, pitch and yaw to the console
-    Serial.print("R/P/Y: ");
+    Serial.print("Roll | Pitch | Yaw : ");
     Serial.print(roll);
     Serial.print(", ");
     Serial.print(pitch);
