@@ -1,10 +1,12 @@
 #include "ArrayOperations.h"
 
-void addElementFirst(float element, float arr[],int size) {
-  arr[0] = element;
-  for (int i = 0; i < size - 1; i++) {
-    arr[i + 1] = arr[i];
-  }
+void addElemFirst(float element, float arr[], int size) {
+    
+    for (int i = size - 1; i > 0; --i) {
+        arr[i] = arr[i - 1];
+    }
+
+    arr[0] = element;
 }
 
 float calculateMean(float arr[],int size) {
