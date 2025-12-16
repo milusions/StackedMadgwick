@@ -1,6 +1,6 @@
 #include "ArrayOperations.h"
 
-void addElemFirst(float element, float arr[], int size) {
+void addElementFirst(float element, float arr[], int size) {
     
     for (int i = size - 1; i > 0; --i) {
         arr[i] = arr[i - 1];
