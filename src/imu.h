@@ -2,7 +2,7 @@
 #define IMU_H
 
 #include <MPU6050_tockn.h>
-#include "array_ops.h"
+#include "ArrayOperations.h"
 #include <Wire.h>
 
 

@@ -1,5 +1,5 @@
 #include "AverageFilter.h"
-#include "array_ops.h"
+#include "ArrayOperations.h"
 
 AverageFilter::AverageFilter() {
 }

@@ -1,7 +1,7 @@
 #ifndef STACKED_MADGWICK_H
 #define STACKED_MADGWICK_H
 
-#include "imu_filter_flow.h"
+#include "IMUFilterFlow.h"
 #include "MadgwickAHRS.h"
 
 class StackedMadgwick {

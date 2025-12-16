@@ -1,5 +1,5 @@
 #include "MovingAverageFilter.h"
-#include "array_ops.h"
+#include "ArrayOperations.h"
 
 MovingAverageFilter::MovingAverageFilter() {
 }
