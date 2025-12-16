@@ -2,7 +2,7 @@
 
 ## Overview
 
-**StackedMadgwick** is an enhanced implementation of the Madgwick AHRS (Attitude and Heading Reference System) algorithm for Arduino.
+**StackedMadgwick** is an enhanced implementation of the Madgwick AHRS (Attitude and Heading Reference System) algorithm for Arduino.<br>
 This library extends the original Madgwick algorithm by introducing **additional pre-filtering stages** to improve stability and noise resistance when working with IMU sensor data.
 
 It is designed to be **modular, easy to integrate**, and fully compatible with the Arduino IDE.
