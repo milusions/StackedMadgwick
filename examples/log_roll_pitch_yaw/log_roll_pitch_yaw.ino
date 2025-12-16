@@ -3,30 +3,32 @@
 
 
 
-long mdwkLogTimer = millis(); // print timer state variable
+long mdwkLogTimer = millis();  // print timer state variable
 
-long mdwkLogDelay = 250; // print delay of 250ms
+long mdwkLogDelay = 250;  // print delay of 250ms
 
 
-const float samplingFrequency = 1000.0; // Samples at 1000 Hz
+const float samplingFrequency = 1000.0;  // Samples at 1000 Hz
 
-IMU imu(samplingFrequency); // IMU object
+IMU imu(samplingFrequency);  // IMU object
 
-StackedMadgwick stackedMadgwick(samplingFrequency); // Stacked Madgwick Object
+StackedMadgwick stackedMadgwick(samplingFrequency);  // Stacked Madgwick Object
 
 void setup() {
-  Serial.begin(9600); // intiating the serial connection
+  Serial.begin(9600);  // intiating the serial connection
 
-  imu.begin(); // intializing the imu
+  imu.begin();  // intializing the imu
 
-  imu.calibrate(); // calibrating the imu at startup
+  imu.calibrate();  // calibrating the imu at startup
 
-  stackedMadgwick.begin(); // initializing the stacked madgwick
+  Serial.println();
+
+  stackedMadgwick.begin();  // initializing the stacked madgwick
 }
 
 void loop() {
-  imu.update(); // refreshes imu data
-  if (imu.isUpToDate()) { // checks if imu has the next data
+  imu.update();            // refreshes imu data
+  if (imu.isUpToDate()) {  // checks if imu has the next data
 
     // Extracts the acceleration and gyroscopic values from the imu
     float accX = imu.getAccX();
@@ -34,7 +36,7 @@ void loop() {
     float accZ = imu.getAccZ();
     float gyroX = imu.getGyroX();
     float gyroY = imu.getGyroY();
-    float gyroZ = imu.getGyroZ(); 
+    float gyroZ = imu.getGyroZ();
 
     /* Update the Raw IMU value to the library.
        It automatically implements filter flow for raw IMU data
@@ -49,7 +51,7 @@ void loop() {
   }
 
   if (millis() - mdwkLogTimer > mdwkLogDelay) {
-    
+
     // Extracting the roll, pitch and yaw from the Stacked Madgwick
     float roll = stackedMadgwick.getRoll();
     float pitch = stackedMadgwick.getPitch();
