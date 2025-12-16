@@ -1,4 +1,4 @@
-#include "high_pass_filter.h"
+#include "HighPassFilter.h"
 
 HighPassFilter::HighPassFilter(float alpha) {
   _alpha = alpha;

@@ -1,4 +1,4 @@
-#include "stacked_madgwick.h"
+#include "StackedMadgwick.h"
 
 StackedMadgwick::StackedMadgwick(float samplingFrequency) {
   _samplingFrequency = samplingFrequency;

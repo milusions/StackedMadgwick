@@ -1,5 +1,5 @@
-#include "imu.h"
-#include "stacked_madgwick.h"
+#include "IMU.h"
+#include "StackedMadgwick.h"
 
 
 

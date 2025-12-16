@@ -1,9 +1,9 @@
 #ifndef IMU_FILTER_FLOW_H
 #define IMU_FILTER_FLOW_H
 
-#include "low_pass_filter.h"
-#include "avg_filter.h"
-#include "moving_avg_filter.h"
+#include "LowPassFilter.h"
+#include "AverageFilter.h"
+#include "MovingAverageFilter.h"
 
 class IMUFilterFlow {
 

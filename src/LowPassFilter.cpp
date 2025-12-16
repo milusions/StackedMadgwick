@@ -1,4 +1,4 @@
-#include "low_pass_filter.h"
+#include "LowPassFilter.h"
 
 LowPassFilter::LowPassFilter(float alpha){
   _alpha = alpha;

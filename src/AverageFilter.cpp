@@ -1,4 +1,4 @@
-#include "avg_filter.h"
+#include "AverageFilter.h"
 #include "array_ops.h"
 
 AverageFilter::AverageFilter() {

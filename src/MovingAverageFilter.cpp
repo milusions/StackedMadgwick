@@ -1,4 +1,4 @@
-#include "moving_avg_filter.h"
+#include "MovingAverageFilter.h"
 #include "array_ops.h"
 
 MovingAverageFilter::MovingAverageFilter() {

@@ -1,4 +1,4 @@
-#include "imu.h"
+#include "IMU.h"
 
 MPU6050 _mpu6050(Wire);
 

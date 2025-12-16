@@ -1,4 +1,4 @@
-#include "array_ops.h"
+#include "ArrayOperations.h"
 
 void addElementFirst(float element, float arr[],int size) {
   arr[0] = element;
