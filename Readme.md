@@ -55,7 +55,7 @@ These dependencies are declared in `library.properties` and will be handled auto
 ```cpp
 #include <StackedMadgwick.h>
 
-// Initialize and use the Stacked Madgwick class as required
+// Initialize and use the StackedMadgwick class as required
 ```
 
 Check the `examples` folder for complete working sketches.
